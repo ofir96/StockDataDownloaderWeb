@@ -1,0 +1,113 @@
+html {
+        font-family: sans-serif;
+      }
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    background: url('new_background.png');
+    background-size: cover;
+}
+
+header {
+    position: relative;
+    padding: 3px;
+    margin: 2px;
+    text-align: left;
+    width: 100%;
+    background-color: #d5e3e3;
+}
+
+header > img{
+  position: absolute;
+  top: 25px;
+  left: 87%;
+  width: 110px;
+  margin: 0;
+  float:right;
+}
+
+header > h1 {
+  position: relative;
+  top: 15px;
+  left: 30px;
+}
+
+header > h2 {
+  position: relative;
+  top: 10px;
+  left: 30px;
+}
+
+
+.main{
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro {
+   position: relative;
+   left: 10px;
+   padding: 15px;
+   margin-bottom:20px;
+   margin-top: 8px;
+}
+.
+.stockimg{
+    position: absolute;
+    left: 780px;
+    top: 3px;
+}
+
+.tops {
+    float: left;
+    width:45%;
+    margin: 6px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+
+}
+.stocksdata {
+    float: right;
+    width: 50%;
+    height: 290px;
+    background-color: rgb(224,224,224);
+    margin: 3px;
+
+}
+
+.stock {
+   padding: 30px;
+   margin: 5px;
+   left: 40px;
+
+}
+
+
+#stockform {
+    margin: 1.5rem;
+    paddig; 10rem;
+}
+
+#stockform > label{
+    display: block;
+}
+
+#stockform > input{
+    display: block;
+    width: 50%
+}
+
+button {
+   color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #2f96b4;
+  }
+
+footer {
+    position: absolute;
+    top: 760px;
+}
+

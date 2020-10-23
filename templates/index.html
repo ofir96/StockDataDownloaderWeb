@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href='static/styles/main.css'/>
+</head>
+<body>
+    <header>
+        <h1> StockMarket Data </h1>
+        <h2>Get access and downloads Stock Data</h2>
+        <img class="logo" src="/static/main_logo.png">
+    </header>
+    <div class="intro">
+        <img class="stockimg" src="/static/best-stocks-to-buy-now-0820.jpg" alt="stock photo" style="position: absolute;
+        top: 3px;
+        left: 780px;">
+        <h3>Stocks Data</h3>
+        <p>A easy-to use solution that improve the accessibility the data collection of stocks</p>
+        <p>Our website simplifies you get market statics and meta data of stocks by use Yahoo! finance API!</p>
+        <p>By clicking those buttom you will get a csv file of:</p>
+        <ul>
+            <li>Top Gainer - A stocks that gains price during the last 24 hours </li>
+            <li>Top Losers - A stocks that loses price during the last 24 hours </li>
+            <li>Top Active - A stocks that trade the highest volume of shares over the last 24 hours</li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="tops">
+            <form method="post" action="/">
+                <h3>Daily Top Gainers</h3>
+                <button type="submit" name="TopGainers" value="TopGainers"> Click me to Get Top Gainers </button>
+            </form>
+            <form method="post" action="/">
+                <h3>Daily Top Losers</h3>
+                <button type="submit" name="TopLosers" value="TopLosers">Click me to Get Top Losers</button>
+            </form>
+            <form method="post" action="/">
+                <h3>Daily Most Actives</h3>
+                <button type="submit" name="MostActives" value="MostActives"> Click me to Get Most Actives  </button>
+            </form>
+        </div>
+        <div class="stocksdata">
+            <form action="/stock" method="post" id="stockform">
+                <h3>Data per stock</h3>
+                <label for="symbol">Enter a stock's symbol</label>
+                <input type="text" id="symbol" name="symbol">
+                <label for="start date">Start Date</label>
+                <input type="date" id="start date" name="start date">
+                <label for="end date">End Date</label>
+                <input type="date" id="end date" name="end date">
+                <label for="click">Click Here to get Your data</label>
+                <input type="submit" form="stockform" value="submit"></input>
+            </form>
+        </div>
+    </div>
+    <footer>
+            <p>Contact us via <a href="ofirhaimofir96@gmail.com">email</a></p>
+        <p><small>© Stocks Data - All rights reserved, credit to Yahoo Finance</small></p>
+    </footer>
+</body>
+</html>
